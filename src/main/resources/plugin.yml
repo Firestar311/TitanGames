@@ -2,7 +2,7 @@ name: TitanGames
 version: ${project.version}
 main: com.stardevmc.titangames.TitanGames
 api-version: 1.13
-depend: [FireLib,CustomItems]
+depend: [FireLib]
 authors: [Firestar311]
 description: A Survival Games plugin
 commands:
