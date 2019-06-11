@@ -77,7 +77,15 @@
         <dependency>
             <groupId>com.firestar311</groupId>
             <artifactId>FireLib</artifactId>
-            <version>1.14.2-SNAPSHOT</version>
+            <version>1.15.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <repository>
+            <id>firestar311-ftp</id>
+            <name>firestar311-ftp</name>
+            <url>ftp://firestar311.com/public_html/maven2</url>
+        </repository>
+    </distributionManagement>
 </project>
