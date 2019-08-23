@@ -1,13 +1,13 @@
 package com.stardevmc.titangames.kits;
 
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 
-public class Kit implements Paginatable {
+public class Kit implements IElement {
     
     private String name;
     private List<ItemStack> items = new ArrayList<>();

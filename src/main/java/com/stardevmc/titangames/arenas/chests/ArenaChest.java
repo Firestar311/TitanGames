@@ -1,11 +1,11 @@
 package com.stardevmc.titangames.arenas.chests;
 
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import org.bukkit.Location;
 
 import java.util.Objects;
 
-public class ArenaChest implements Paginatable {
+public class ArenaChest implements IElement {
  
     private Location location;
     private int chestTeir;

@@ -1,12 +1,12 @@
 package com.stardevmc.titangames.arenas;
 
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
 import java.util.Objects;
 
-public class Spawn implements Paginatable {
+public class Spawn implements IElement {
     
     private Location location;
     private Player player;

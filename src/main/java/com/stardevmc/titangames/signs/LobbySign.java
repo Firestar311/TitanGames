@@ -1,6 +1,6 @@
 package com.stardevmc.titangames.signs;
 
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import com.stardevmc.titangames.arenas.Arena;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 
 import java.util.Objects;
 
-public class LobbySign implements Paginatable {
+public class LobbySign implements IElement {
 
     private Location location;
     private Arena arena;

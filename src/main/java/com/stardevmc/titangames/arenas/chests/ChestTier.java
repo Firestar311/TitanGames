@@ -1,13 +1,13 @@
 package com.stardevmc.titangames.arenas.chests;
 
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class ChestTier implements Paginatable {
+public class ChestTier implements IElement {
     
     private int number, maxItems;
     private Map<ItemStack, Integer> items;

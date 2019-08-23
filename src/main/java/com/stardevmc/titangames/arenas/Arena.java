@@ -1,7 +1,7 @@
 package com.stardevmc.titangames.arenas;
 
 import com.firestar311.lib.builder.ItemBuilder;
-import com.firestar311.lib.pagination.Paginatable;
+import com.firestar311.lib.pagination.IElement;
 import com.firestar311.lib.region.Cuboid;
 import com.firestar311.lib.util.Range;
 import com.firestar311.lib.util.Utils;
@@ -24,7 +24,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import java.util.*;
 import java.util.Map.Entry;
 
-public class Arena implements Paginatable {
+public class Arena implements IElement {
     
     public enum ArenaState {
         SETUP, WAITING, COUNTDOWN, IN_GAME, ENDING
