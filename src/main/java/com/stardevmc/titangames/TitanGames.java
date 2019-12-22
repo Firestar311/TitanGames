@@ -1,16 +1,16 @@
 package com.stardevmc.titangames;
 
-import com.firestar311.lib.region.*;
-import com.stardevmc.titangames.arenas.*;
+import com.firestar311.lib.region.SelectionManager;
+import com.stardevmc.titangames.arenas.Arena;
+import com.stardevmc.titangames.arenas.ArenaManager;
 import com.stardevmc.titangames.arenas.chests.ChestTierManger;
-import com.stardevmc.titangames.command.CommandManager;
 import com.stardevmc.titangames.arenas.listeners.*;
+import com.stardevmc.titangames.command.CommandManager;
 import com.stardevmc.titangames.kits.KitManager;
 import com.stardevmc.titangames.kits.KitSelectorListener;
 import com.stardevmc.titangames.signs.SignListener;
 import com.stardevmc.titangames.signs.SignManager;
 import com.stardevmc.titangames.util.Messages;
-import org.bukkit.Material;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -44,7 +44,7 @@ public final class TitanGames extends JavaPlugin {
         pm.registerEvents(new PlayerListeners(this), this);
         pm.registerEvents(new SignListener(this), this);
         pm.registerEvents(new KitSelectorListener(this), this);
-        pm.registerEvents(new RegionToolListener(selectionManager, new RegionWandToolHook(this, Material.DIAMOND_SWORD)), this);
+        //pm.registerEvents(new RegionToolListener(selectionManager, new RegionWandToolHook(this, Material.DIAMOND_SWORD)), this);
         
         for (Arena arena : this.arenaManager.getArenas()) {
             arena.allowPlayers();
